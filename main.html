@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>💌 Запрошення на побачення</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(180deg, #fff8f3, #ffe9f0);
+  color: #4a2c2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 1em;
+}
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 380px;
+  padding: 2em;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+h1 {
+  color: #e91e63;
+  margin-bottom: 0.5em;
+  font-size: 1.8em;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin: 0.6em 0;
+}
+.heart {
+  font-size: 2em;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); color: #e91e63; }
+  50% { transform: scale(1.2); color: #ff8da1; }
+}
+button {
+  margin-top: 1.2em;
+  padding: 0.7em 1.4em;
+  border: none;
+  border-radius: 10px;
+  background: #e91e63;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: #ff99b2;
+  transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Запрошення</h1>
+    <p>Хочу запросити тебе на побачення 🌸</p>
+    <p>13.10 о 19:00 🌇</p>
+    <p>Місце: наше улюблене місце</p>
+    <p>Якщо згодна — так😊</p>
+    <button onclick="alert('Люблю тебе 💕')"> 💗</button>
+  </div>
+</body>
+</html>
